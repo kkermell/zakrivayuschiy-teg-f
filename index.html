@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <meta name="color-scheme" content="light dark" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any">
+    <link rel="icon" href="./images/favicon.svg" sizes="image/svg+xml">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="strech-block header">
+      <a href="#" class="header__logo">&lt;/HTML&gt;</a>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -40,7 +46,38 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="content">
+      <section>
+        <ul class="card__list">
+          <li class="card__list-item strech-block">
+            <article class="card">
+              <h2 class="card__title">
+                Фритрек и нулевой спринт: Подготовка к работе
+              </h2>
+              <div class="card__image-block">
+                <img
+                  src="./images/image-7.png"
+                  alt=""
+                  class="card__image"
+                />
+                <span class="watermark">&lt;/HTML&gt;</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  Это было самое начало пути. На этом этапе важно было
+                  проникнуться основами и настроиться на учёбу. И, возможно,
+                  подумать, как новые знания могут повлиять на ваше будущее.
+                </p>
+                <p>Место для ваших воспоминаний о начале обучения.</p>
+              </div>
+              <div class="card__button-block">
+                
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
