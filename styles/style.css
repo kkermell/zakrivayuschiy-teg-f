@@ -16,8 +16,6 @@
   font-variation-settings: 'wght' var(--main-weight-text, 400);
   font-size: 18px;
   color: var(--accent-color, #000);
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
 }
 
 .strech-block {
@@ -72,7 +70,6 @@
   position: relative;
   cursor: pointer;
   transition: opacity 0.3s ease;
-  position: relative;
 }
 
 .theme-menu__button:disabled {
