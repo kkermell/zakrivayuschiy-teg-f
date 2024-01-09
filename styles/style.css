@@ -8,11 +8,12 @@
   padding: 100px clamp(0rem, 34.742vw - 8.143rem, 23.125rem);
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-color: var(--theme-color, #fff);
   background-image: var(--background-gradient);
   background-position: center;
   background-attachment: fixed;
   font-family: var(--main-font, sans-serif);
-  font-weight: var(--main-weight-text, 400);
+  font-variation-settings: 'wght' var(--main-weight-text, 400);
   font-size: 18px;
   color: var(--accent-color, #000);
 }
@@ -38,8 +39,8 @@
 }
 
 .header__logo {
-  cursor: none;
-  font-weight: 400px;
+  cursor: text;
+  font-weight: 400;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-decoration: none;
   margin-block-end: 20px;
@@ -103,7 +104,6 @@
 .theme-menu__button:focus {
   outline: none;
   opacity: 0.6;
-  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -134,7 +134,7 @@
 
 .card__title {
   font-size: 18px;
-  font-weight: var(--card-weight-title, 700);
+  font-variation-settings: 'wght' var(--card-weight-title, 700);
   padding: 3px 10px;
   line-height: 23px;
 }
@@ -227,7 +227,6 @@
 
 .card__icon-button {
   background-color: transparent;
-  border: none;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
   block-size: 38px;
