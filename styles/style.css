@@ -16,6 +16,8 @@
   font-variation-settings: 'wght' var(--main-weight-text, 400);
   font-size: 18px;
   color: var(--accent-color, #000);
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
 }
 
 .strech-block {
@@ -341,6 +343,7 @@
 .dialog__text-block {
   display: grid;
   grid-template-columns: 39px 1fr;
+  grid-template-areas: "dialog-floppy-icon dialog-title";
   justify-content: center;
   align-content: center;
   gap: 20px;
@@ -350,6 +353,7 @@
   color: var(--accent-color, #000);
   inline-size: 100%;
   block-size: 100%;
+  grid-area: dialog-floppy-icon;
 }
 
 .dialog__title {
@@ -358,6 +362,7 @@
   line-height: 150%;
   color: var(--accent-color, #000);
   text-transform: uppercase;
+  grid-area: dialog-title;
 }
 
 .dialog__form {
